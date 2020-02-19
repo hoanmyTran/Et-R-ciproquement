@@ -1,0 +1,495 @@
+/*LOGO*/
+#logo
+{
+	padding-bottom:none;
+	width : 150px;
+	height : 69px;
+	
+}
+
+.logo
+{
+	float: left;
+	padding-top:1px;
+	padding-left:1px;
+	border-radius:10px;
+}
+/*INSCRIPTION*/
+
+.ins
+{
+	background: rgb(30,87,153); 
+	background: -moz-radial-gradient(center, ellipse cover, rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); 
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+	display : inline-block;
+	padding:5px;
+	color:white;
+	border-radius:20px;
+}
+
+
+
+
+/*MENU DROPDOWN*/
+#menu
+{
+	border-radius: 10px;
+	background: rgb(50,125,255);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(50,125,255,1) 29%, rgba(100,209,252,1) 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(50,125,255,1) 29%,rgba(100,209,252,1) 100%); 
+	background: radial-gradient(ellipse at center, rgba(50,125,255,1) 29%,rgba(100,209,252,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#327dff', endColorstr='#64d1fc',GradientType=1 );
+	display : flex;
+}
+
+#sous-menu
+{
+	display : flex;
+	font-size : 20px;
+	list-style : none;
+}
+
+li ul
+{
+	background-color:rgba(0,0,0,0.8);
+    	display : none;
+	list-style : none;
+	margin-left : 3em;
+	border-radius : 20px;
+	padding : 12px;
+}
+ul li a
+{
+	
+    	display : block;
+    	text-decoration : none;
+	color : white;
+    	padding : 5px 10px 5px 10px;
+    	margin-left : 10px;
+}
+
+li:hover ul
+{
+    	display : block;
+    	position : absolute;
+    	left : 100px;
+
+}
+
+#cherche:hover ul
+{
+    	display : block;
+    	position : absolute;
+    	left : 150px;
+
+}
+
+
+li:hover li
+{
+    	float : left;
+    	font-size: 15px;
+  
+}
+
+li:hover li a:hover
+{
+	background: rgb(50,125,255);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(50,125,255,1) 29%, rgba(100,209,252,1) 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(50,125,255,1) 29%,rgba(100,209,252,1) 100%); 
+	background: radial-gradient(ellipse at center, rgba(50,125,255,1) 29%,rgba(100,209,252,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#327dff', endColorstr='#64d1fc',GradientType=1 );
+	border-radius : 20px;
+	color : black;
+}
+
+li button
+{
+	margin-left : 1em;
+}
+
+::-webkit-input-placeholder { color: #aaafbd; font-style: italic; }
+
+/*SECTION*/
+#slide
+{
+     height: 450px;		/*hauteur du diaporama*/
+     margin : auto;
+     overflow: hidden;	/*Les marges ne débordent pas*/
+     position: relative;
+     width: 1060px;		/*largeur du diaporama*/
+     border : 10px solid rgb(50,125,255);
+	border-radius:10px;
+	margin-top : 2em;
+}
+ 
+#slide_wrap
+{
+     height : 450px;
+     left : 0pt;				/*pt:points; 1 inch = 72pt*/
+     position : absolute;	/*il faut d'abord la position relative*/
+     top : 0pt;
+     width : 6360px;			/*la somme de largeurs de toutes les images*/
+	-moz-transition:left 0.6s ease-in-out;	/*le contenu va afficher en 0.6s*/
+     transition:left 0.6s ease-in-out;
+     -webkit-transition:left 0.6s ease-in-out;
+     -o-transition:left 0.6s ease-in-out;
+}
+ 
+#slide_wrap img
+{
+     float : left;
+}
+
+.input
+{
+     display: none;	/*---pour cacher checkbox---*/
+}
+ 
+.label
+{
+     background-color : white;
+     border-radius : 20px 20px 20px 20px;
+     bottom : 10px;
+     box-shadow : 1px 1px 1px rgba(0, 0, 0, 0.4);
+     cursor : pointer;	/*pour changer l'affichage du pointeur quand on mets la flèche dessus ça change*/
+     display : block;
+     height : 12px;
+     position : absolute;
+     width : 12px;
+     z-index : 2;
+	-moz-transition:width 0.4s,height 0.4s ease;
+    -webkit-transition:width 0.4s,height 0.4s ease;
+    -o-transition:width 0.4s,height 0.4s ease;
+    transition:width 0.4s,height 0.4s ease;
+}
+ 
+
+#button6 {
+     right: 15px;
+}						/*la position des boutons*/
+#button5 {
+     right: 35px;
+}
+ 
+#button4 {
+     right: 55px;
+}
+ 
+#button3 {
+     right: 75px;
+}
+ 
+#button2 {
+     right: 95px;
+}
+
+#button1 {
+     right : 115px;
+}
+
+
+#image1:checked ~ #button1,			/* les boutons quand input est checked */
+#image2:checked ~ #button2,			/* quand image est checked, tous les trucs dedans sont sélectionnés juste après le truc parental */
+#image3:checked ~ #button3,
+#image4:checked ~ #button4,
+#image5:checked ~ #button5,
+#image6:checked ~ #button6
+{
+    width:7px;
+    height:7px;
+    margin-bottom:1px;
+    margin-right:2px;
+}
+ 
+
+#image1:checked ~ #slide_wrap {			/* pour bouger slide_wrap quand input est checked */
+     left: 0px;
+}
+ 
+#image2:checked ~ #slide_wrap {
+     left: -1060px;
+}
+ 
+#image3:checked ~ #slide_wrap {
+     left: -2120px;
+}
+ 
+#image4:checked ~ #slide_wrap {
+     left: -3180px;
+}
+
+#image5:checked ~ #slide_wrap {
+     left: -4240px;
+}
+
+#image6:checked ~ #slide_wrap {
+     left : -5300px;
+}
+
+h1
+{
+    width:1060px;
+    z-index:1;		/*pour régler l'ordre*/
+    height:50px;
+    position:absolute;
+    bottom:0;
+    left:-1060px;
+    background-color:rgba(0,0,0,0.8);
+    font-family:calibri;
+    text-transform:uppercase;
+    font-weight:600;		/*en gras*/
+    color:white;
+    letter-spacing:1px;	/*distance entre les lettres*/
+    font-size:18px;
+    text-shadow:0 1px 0 rgba(0,0,0,0.5);
+    line-height:50px;	/*hauteur de chaque lignes*/
+    text-indent:15px;	/*thuc dau dong*/
+    opacity:0;			/*transparence*/
+    -moz-transition:opacity 1s,left 1s ease;
+    -webkit-transition:opacity 1s,left 1s  ease;
+    -o-transition:opacity 1s,left 1s  ease;
+    transition:opacity 1s,left 1s  ease;
+}
+
+
+ 
+
+#image1:checked ~ #text1,
+#image2:checked ~ #text2,
+#image3:checked ~ #text3,
+#image4:checked ~ #text4,
+#image5:checked ~ #text5,
+#image6:checked ~ #text6
+{
+    opacity:1;
+    left:0;
+}
+/*INTERIEUR*/
+body
+{
+	background: url(fond.png) no-repeat bottom;
+}
+
+								/*MAIN*/
+
+main
+{
+	display : flex;
+}
+
+/*ANNONCES*/
+
+main #tableau
+{
+
+	border:2px solid rgb(50,125,255);
+	border-radius: 10px;
+	background-color:rgb(50,125,255);
+	margin-left : 6.3em;
+	margin-right : 0.55em;
+	margin-top : 1em;
+	width : 52em;
+}
+
+#annonces
+{
+	border-collapse : collapse;
+}
+#fixed
+{
+	border-bottom:1px solid white;
+
+	top : 550px;
+}
+
+
+#annonces th
+{
+	color : white;
+	font-family : cursive;
+	font-size : 20px;
+	text-align : center;
+	padding-right : 0.8em;
+	padding-left : 0.8em;
+}
+
+#annonces td
+{
+	border-bottom : 1px solid white;
+	color : white;
+	text-align : center;
+	width : 10em;
+	padding : auto;
+}
+
+#annonces td.baby
+{
+	background-color : black;
+}
+
+#annonces td a
+{
+	background-color : #00CCFF;
+	border-radius : 10px;
+	text-decoration : none;
+	color : white;
+}
+#annonces td a:hover
+{
+	border-radius:10px;
+	background-color : white;
+	color : #D80000;
+}
+#annonces td img
+{
+	height : 150px;
+	margin-top : 0.5em;
+	margin-bottom : 0.5em;
+	width : 150px;	
+}
+
+#annonces .propos
+{
+	color : white;
+	font-family : cursive;
+	font-size : 20px;
+}
+
+#annonces .propos:hover
+{
+	background-color : black;
+}
+
+/*CALENDRIER*/
+
+#calendrier
+{
+	color : black;
+	border-collapse : collapse;
+	margin-top : 1em;
+	margin-bottom : 0.5em;
+}
+
+
+#calendrier th
+{
+	background: rgb(50,125,255);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(50,125,255,1) 29%, rgba(100,209,252,1) 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(50,125,255,1) 29%,rgba(100,209,252,1) 100%); 
+	background: radial-gradient(ellipse at center, rgba(50,125,255,1) 29%,rgba(100,209,252,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#327dff', endColorstr='#64d1fc',GradientType=1 );
+	color : black;
+	border : 1px solid black;
+	font-size : 12px;
+	padding : 2px;
+	text-align : center;
+}
+
+#calendrier td
+{
+	background-color : white;
+	border: 1px solid blue;
+	padding : 2px;
+	text-align : center;
+}
+
+#examen
+{
+	background: rgb(50,125,255);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(50,125,255,1) 29%, rgba(100,209,252,1) 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(50,125,255,1) 29%,rgba(100,209,252,1) 100%); 
+	background: radial-gradient(ellipse at center, rgba(50,125,255,1) 29%,rgba(100,209,252,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#327dff', endColorstr='#64d1fc',GradientType=1 );
+	color : blue;
+}
+
+#calendrier th.dimanche
+{
+	color : red;
+}
+
+.dimanche
+{
+	color : red;
+}
+
+#cal-titre
+{
+	background: rgb(50,125,255);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(50,125,255,1) 29%, rgba(100,209,252,1) 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(50,125,255,1) 29%,rgba(100,209,252,1) 100%); 
+	background: radial-gradient(ellipse at center, rgba(50,125,255,1) 29%,rgba(100,209,252,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#327dff', endColorstr='#64d1fc',GradientType=1 );
+	color : black;
+}
+
+/*PROPOS*/
+
+#droite 
+{
+	display : block;
+}
+
+#droite span
+{
+	display : block;
+	border-collapse:collapse; 
+}
+
+.image
+{
+	margin-bottom : 0.5em;
+
+}
+.image a
+{
+	background-color:rgba(0,0,0,0.5);
+	border : 2px solid rgb(50,125,255);
+
+	padding-top : 90px;
+}
+.image img
+{
+	height : 100px;
+	width : 106px;
+}
+
+/*BAS DE PAGE*/
+
+
+footer
+{
+	margin-bottom : 5em;
+}
+
+#bas-de-page
+{
+	margin:5em;
+	color: rgb(255, 255, 255);
+	background: rgb(50,125,255);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(50,125,255,1) 29%, rgba(100,209,252,1) 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(50,125,255,1) 29%,rgba(100,209,252,1) 100%); 
+	background: radial-gradient(ellipse at center, rgba(50,125,255,1) 29%,rgba(100,209,252,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#327dff', endColorstr='#64d1fc',GradientType=1 );
+	height:1.5em;
+	border-top: solid gray 1px;
+	text-align: center;
+	padding:1em;
+}
+
+.l-bdp
+{
+	padding:1em;
+	margin:4em;
+
+}
+
+.l-bdp a
+{
+	font-size: 15px;
+	text-decoration:none;
+	color:rgb(241, 241, 241);
+}

@@ -1,0 +1,232 @@
+/*LOGO*/
+#logo
+{
+	padding-bottom:none;
+	width : 150px;
+	height : 69px;
+	
+}
+
+.logo
+{
+	float: left;
+	padding-top:1px;
+	padding-left:1px;
+	border-radius:10px;
+}
+/*INSCRIPTION*/
+
+.ins
+{
+	background: rgb(30,87,153); 
+	background: -moz-radial-gradient(center, ellipse cover, rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); 
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+	display : inline-block;
+	padding:5px;
+	color:white;
+	border-radius:20px;
+}
+
+
+
+
+/*MENU DROPDOWN*/
+#menu
+{
+	border-radius: 10px;
+	background: rgb(50,125,255);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(50,125,255,1) 29%, rgba(100,209,252,1) 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(50,125,255,1) 29%,rgba(100,209,252,1) 100%); 
+	background: radial-gradient(ellipse at center, rgba(50,125,255,1) 29%,rgba(100,209,252,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#327dff', endColorstr='#64d1fc',GradientType=1 );
+	display : flex;
+}
+
+#sous-menu
+{
+	display : flex;
+	font-size : 20px;
+	list-style : none;
+}
+
+li ul
+{
+	background-color:rgba(0,0,0,0.8);
+    	display : none;
+	list-style : none;
+	margin-left : 3em;
+	border-radius : 20px;
+	padding : 12px;
+}
+ul li a
+{
+
+    	display : block;
+    	text-decoration : none;
+	color : white;
+    	padding : 5px 10px 5px 10px;
+    	margin-left : 10px;
+}
+
+li:hover ul
+{
+    	display : block;
+    	position : absolute;
+    	left : 100px;
+
+}
+
+#cherche:hover ul
+{
+    	display : block;
+    	position : absolute;
+    	left : 150px;
+
+}
+
+
+li:hover li
+{
+    	float : left;
+    	font-size: 15px;
+  
+}
+
+li:hover li a:hover
+{
+	background: rgb(50,125,255);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(50,125,255,1) 29%, rgba(100,209,252,1) 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(50,125,255,1) 29%,rgba(100,209,252,1) 100%); 
+	background: radial-gradient(ellipse at center, rgba(50,125,255,1) 29%,rgba(100,209,252,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#327dff', endColorstr='#64d1fc',GradientType=1 );
+	border-radius : 20px;
+	color : black;
+}
+
+li button
+{
+	margin-left : 1em;
+}
+
+::-webkit-input-placeholder { color: #aaafbd; font-style: italic; }
+
+
+/*INTERIEUR*/
+body
+{
+	background: url(fond.png) bottom no-repeat;
+}
+
+
+
+#int
+{
+	margin: 5em;
+}
+
+table
+{
+	box-shadow:2px 2px 2px gray;
+	border:2em solid rgb(50,125,255);
+	border-radius: 2em;
+	padding:1em;
+}
+
+
+#mo
+{
+	text-align:right;
+	padding-top:3em;
+	color:black;
+}
+
+#l1
+{
+	padding-right:10em;
+}
+
+
+#deposerannonce
+{
+	margin:auto;
+	margin-bottom:5em;	
+}
+
+#anno1
+{
+	font-size: 12px;
+	color:rgb(50,125,255);
+}
+
+#anno2
+{
+	font-size: 10px;
+	color:black;
+	width:20em;
+}
+
+td
+{
+	color:rgb(50,125,255);
+	padding-bottom:2em;
+}
+
+button.fin
+{
+	margin-top:5em;
+	margin-left:15em;
+	background-color: #1ABEF9;
+	box-shadow: 0px 1px 3px black;
+	border-radius:5px;
+}
+
+button.fin:hover
+{
+	background-color: white;
+	color: rgb(50,125,255); 
+}
+
+textarea
+{
+	color : rgb(50,125,255);
+	border : 1px solid ;
+}
+
+
+
+
+
+/*BAS DE PAGE*/
+
+
+
+#bas-de-page
+{
+	margin:5em;
+	color: rgb(255, 255, 255);
+	background: rgb(50,125,255);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(50,125,255,1) 29%, rgba(100,209,252,1) 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(50,125,255,1) 29%,rgba(100,209,252,1) 100%); 
+	background: radial-gradient(ellipse at center, rgba(50,125,255,1) 29%,rgba(100,209,252,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#327dff', endColorstr='#64d1fc',GradientType=1 );
+	height:1.5em;
+	border-top: solid gray 1px;
+	text-align: center;
+	padding:1em;
+}
+
+.l-bdp
+{
+	padding:1em;
+	margin:4em;
+
+}
+
+.l-bdp a
+{
+	font-size: 15px;
+	text-decoration:none;
+	color:rgb(241, 241, 241);
+}

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<title>Annonces, propositions, recherches, collaboratif</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" style="text/CSS" href="annonces.css">
+	</head> 
+	<body>
+
+		<header id="menu">
+					<a class="logo" href="accueil.html"><img class="logo" src="yolo.png" alt="logo" id="logo"/></a>
+					<ul id="sous-menu">
+						<li><a href="annonces.html">Annonces</a>
+							<ul>
+								<li><a href="propositions.html">Propositions</a></li>
+								<li><a href="recherches.html">Recherches</a></li>
+								<li><a href="collaboratif.html">Collaboratif</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Recherches</a>
+							<ul>
+								<li><select id="services">
+												<option value="0">Toutes les catégories</option>
+												<option value="1"> Accessoires animaux</option>
+												<option value="2"> Accessoire et bagagerie</option>
+												<option value="3"> Administration-secrétariat</option>
+												<option value="4"> Aide ménagére</option>
+												<option value="5"> Aide-conseil (C.V,...)</option>
+												<option value="6"> Ameublement</option>
+												<option value="7"> Amitié-connaissance</option>
+												<option value="8"> Animation soirée</option>
+												<option value="9"> Animaux (garde)</option>
+												<option value="10"> Appartement, maison</option>
+												<option value="11"> Arts de la table</option>
+												<option value="12"> Auto-moto-utilitaire</option>
+												<option value="13"> Beauté (soin, massage)</option>
+												<option value="14"> Billeterie (train, avion, ...)</option>
+												<option value="15"> Bois</option>
+												<option value="16"> Bricolage</option>
+												<option value="17"> Caméraman</option>
+												<option value="18"> Chantier participatif</option>
+												<option value="19"> Co-voiturage</option>
+												<option value="20"> Coach sportif</option>
+												<option value="21"> Coiffure</option>
+												<option value="22"> Collection</option>
+												<option value="23"> Console et jeux vidéo</option>
+												<option value="24"> Cours</option>
+												<option value="25"> Couture</option>
+												<option value="26"> Cuisine</option>
+												<option value="27"> Dvd/Cd</option>
+												<option value="28"> Décoration</option>
+												<option value="29"> Déménagement</option>
+												<option value="30"> Elagage</option>
+												<option value="31"> Equipement Bébé</option>
+												<option value="32"> Equipement auto, moto,...</option>
+												<option value="33"> Equipement sportif</option>
+												<option value="34"> Fruit-légume-produit frais</option>
+												<option value="35"> Garde meubles</option>
+												<option value="36"> Garderie-Babysitting</option>
+												<option value="37"> Gardiennage</option>
+												<option value="38"> Image et son</option>
+												<option value="39"> Informatique-Internet</option>
+												<option value="40"> Instrument de musique</option>
+												<option value="41"> Jardinage</option>
+												<option value="42"> Jouets, jeux de société</option>
+												<option value="43"> Linge de maison</option>
+												<option value="44"> Livres, Bd</option>
+												<option value="45"> Loisirs créatifs-hobbies</option>
+												<option value="46"> Maison</option>
+												<option value="47"> Matériel éléctroménager</option>
+												<option value="48"> Matériel professionnel</option>
+												<option value="49"> Montres et bijoux</option>
+												<option value="50"> Mécanique</option>
+												<option value="51"> Nautisme</option>
+												<option value="52"> Peinture tapisserie</option>
+												<option value="53"> Photographe</option>
+												<option value="54"> Plomberie</option>
+												<option value="55"> Préparation repas</option>
+												<option value="56"> Relooking</option>
+												<option value="57"> Rentrée scolaire</option>
+												<option value="58"> Service 3 ème âge</option>
+												<option value="59"> Sport</option>
+												<option value="60"> Tapissier</option>
+												<option value="61"> Tatouage</option>
+												<option value="62"> Terrain</option>
+												<option value="63"> Téléphonie</option>
+												<option value="64"> Vêtements, accessoires</option>
+												<option value="65"> autres</option>
+								</select></li>
+								<li><select id="dep">
+													<option value="0">Sélectionez un département</option>
+													<option value="1"> Ain</option>
+													<option value="2"> Aisne</option>
+													<option value="3"> Allier</option>
+													<option value="4"> Alpes-de-Hautes-Provence</option>
+													<option value="5"> Hautes-Alpes</option>
+													<option value="6"> Alpes-Maritimes</option>
+													<option value="7"> Ardèche</option>
+													<option value="8"> Ardennes</option>
+													<option value="9"> Ariège</option>
+													<option value="10"> Aube</option>
+													<option value="11"> Aude</option>
+													<option value="12"> Aveyron</option>
+													<option value="13"> Bouches-du-Rhône</option>
+													<option value="14"> Calvados</option>
+													<option value="15"> Cantal</option>
+													<option value="16"> Charente</option>
+													<option value="17"> Charente-Maritime</option>
+													<option value="18"> Cher</option>
+													<option value="19"> Corrèze</option>
+													<option value="20"> Corse</option>
+													<option value="21"> Côte-d'Or</option>
+													<option value="22"> Côtes-d'Armor</option>
+													<option value="23"> Creuse</option>
+													<option value="24"> Dordogne</option>
+													<option value="25"> Doubs</option>
+													<option value="26"> Drôme</option>
+													<option value="27"> Eure</option>
+													<option value="28"> Eure-et-Loir</option>
+													<option value="29"> Finistère</option>
+													<option value="30"> Gard</option>
+													<option value="31"> Haute-Garonne</option>
+													<option value="32"> Gers</option>
+													<option value="33"> Gironde</option>
+													<option value="34"> Hérault</option>
+													<option value="35"> Ille-et-Villaine</option>
+													<option value="36"> Indre</option>
+													<option value="37"> Indre-et-Loire</option>
+													<option value="38"> Isère</option>
+													<option value="39"> Jura</option>
+													<option value="40"> Landes</option>
+													<option value="41"> Loir-et-Cher</option>
+													<option value="42"> Loire</option>
+													<option value="43"> Haute-Loire</option>
+													<option value="44"> Loire-Atlantique</option>
+													<option value="45"> Loiret</option>
+													<option value="46"> Lot</option>
+													<option value="47"> Lot-et-Garonne</option>
+													<option value="48"> Lozère</option>
+													<option value="49"> Maine-et-Loire</option>
+													<option value="50"> Manche</option>
+													<option value="51"> Marne</option>
+													<option value="52"> Haute-Marne</option>
+													<option value="53"> Mayenne</option>
+													<option value="54"> Meurthe-et-Moselle</option>
+													<option value="55"> Meuse</option>
+													<option value="56"> Morbihan</option>
+													<option value="57"> Moselle</option>
+													<option value="58"> Nièvre</option>
+													<option value="59"> Nord</option>
+													<option value="60"> Oise</option>
+													<option value="61"> Orne</option>
+													<option value="62"> Pas-de-Calais</option>
+													<option value="63"> Puy-de-Dôme</option>
+													<option value="64"> Pyrénées-Atlantiques</option>
+													<option value="65"> Hautes-Pyrénées</option>
+													<option value="66"> Pyrénées-Orientales</option>
+													<option value="67"> Bas-Rhin</option>
+													<option value="68"> Haut-Rhin</option>
+													<option value="69"> Rhône</option>
+													<option value="70"> Haute-Saône</option>
+													<option value="71"> Saône-et-Loire</option>
+													<option value="72"> Sarthe</option>
+													<option value="73"> Savoie</option>
+													<option value="74"> Haute-Savoie</option>
+													<option value="75"> Paris</option>
+													<option value="76"> Seine-Maritime</option>
+													<option value="77"> Seine-et-Marne</option>
+													<option value="78"> Yvelines</option>
+													<option value="79"> Deux-Sèvres</option>
+													<option value="80"> Somme</option>
+													<option value="81"> Tarn</option>
+													<option value="82"> Tarn-et-Garonne</option>
+													<option value="83"> Var</option>
+													<option value="84"> Vaucluse</option>
+													<option value="85"> Vendée</option>
+													<option value="86"> Vienne</option>
+													<option value="87"> Haute-Vienne</option>
+													<option value="88"> Vosges</option>
+													<option value="89"> Yonne</option>
+													<option value="90"> Territoire de Belfort</option>
+													<option value="91"> Essonne</option>
+													<option value="92"> Hauts-de-Seine</option>
+													<option value="93"> Seine-Saint-Denis</option>
+													<option value="94"> Val-de-Marne</option>
+													<option value="95"> Val-d'Oise</option>
+													<option value="96"> Guadeloupe</option>
+													<option value="97"> Martinique</option>
+													<option value="98"> Guyane</option>
+													<option value="99"> La Réunion</option>
+													<option value="100"> Mayotte</option>
+								</select></li>
+								<li><form style="text-align: right" method="get" action="http://www.google.com/search"> 
+				<input type="search" name="q" size="31" maxlength="255" placeholder="Courte description..." />
+				<button type="submit"><img src="recherche.png" alt="recherche"/> </button> 
+			</form></li>
+							</ul>
+						</li>
+						<li><a href="deposannonce.html">Déposer des annonces</a></li>
+						<li><a href="communaute.html">Communauté</a></li>
+						<li><a href="aide.html">Aide</a></li>
+						<li><button type="submit" class="ins">Inscription</button></li>
+						<li><button type="submit" class="ins">Connexion</button></li>
+					</ul>
+		</header>
+
+		<section>
+			<div id="slide">
+				<input type="radio" id="image1" name="slide" class="input" checked/>	<!--checked pour celle qui affiche en 1er-->
+				<label for="image1" class="label" id="button1"></label>			<!--button 1-->
+ 													<!--label définit input, if on clique sur label, on ramène le pointeur vers input, il faut que id de input doit être compatible avec for de label-->
+				<input type="radio" id="image2" name="slide" class="input">
+				<label for="image2" class="label" id="button2"></label>			<!--button 2-->
+ 
+				<input type="radio" id="image3" name="slide" class="input"/>
+				<label for="image3" class="label" id="button3"></label>			<!--button 3-->
+ 
+				<input type="radio" id="image4" name="slide" class="input"/>
+				<label for="image4" class="label" id="button4"></label>			<!--button 4-->
+
+				<input type="radio" id="image5" name="slide" class="input"/>
+				<label for="image5" class="label" id="button5"></label>			<!--button 5-->
+
+				<input type="radio" id="image6" name="slide" class="input"/>
+				<label for="image6" class="label" id="button6"></label>			<!--button 6-->
+				
+				<div id="slide_wrap">
+
+					<a href=""><img src="garde-de-chien.jpg" alt="garde de chien" width="1060" height="450" /></a>
+			        	<a href=""><img src="beautiful.jpg" alt="miranda kerr" width="1060" height="450" /></a>
+        				<a href=""><img src="teacher.jpg" alt="onizuka" width="1060" height="450" /></a>
+        				<a href=""><img src="enfant.jpg" alt="vin diessel" width="1060" height="450" /></a>
+					<a href=""><img src="maison.jpg" alt="maison" width="1060" height="450" /></a>
+					<a href=""><img src="housework.jpg" alt="travaux" width="1060" height="450" /></a>
+
+				</div>
+ 
+				<h1 id="text1">Garde de chien</h1>	<!--titre de la 1e image-->
+ 
+				<h1 id="text2">Beauté</h1>	<!--titre de la 3e image-->
+ 
+				<h1 id="text3">Cours & Formation</h1>	<!--titre de la 3e image-->
+ 
+				<h1 id="text4">Enfant</h1>	<!--titre de la 4e image-->
+
+				<h1 id="text5">Maison</h1>	<!--titre de la 5e image-->
+
+				<h1 id="text6">Travaux</h1>	<!--titre de la 6e image-->
+			</div>
+		</section>
+		<main>
+			<div id="tableau">
+				<table id="annonces">
+					<tr id="fixed"><th><img src="photo.png" alt="photo"/></th><th>Propose</th><th>Recherche</th><th>Service</th><th>Nombre<br/> d'heures</th><th>Département</th></tr>
+					<tr><td class="propos">URGENT garde Golden Retriever<img src="Marie-garde-de-chien.jpg" alt="photo"/><a href="mariep.html">Contactez-moi</a></td><td>Garde d'enfant<br/>Cours d'anglais<br/>Courses à partir d'une liste</td><td>Garde de chien</td><td>Animaux</td><td></td><td>Montpellier<br/>34080</td></tr>
+					<tr><td class="propos">Besoin d'aide pour demenage<img src="ludivine.jpg" alt="photo"/><a href="ludivinea.html">Contactez-moi</a></td><td>Courses à partir d'une liste<br/>Aide à la préparation d'une fête</td><td>Aide déménagement</td><td>Déménagement</td><td></td><td>Palaiseau<br/>91120</td></tr>
+					<tr><td class="propos">Peinture contre éléctricité ou informatique<img src="informatique.jpg" alt="photo"/><a href="michela.html">Contactez-moi</a></td><td>Electricité<br/>Informatique</td><td>Peinture</td><td>Peinture tapisserie</td><td></td><td>St maur<br/>39570</td></tr>
+					<tr><td class="propos">Massage détente<img src="claudine.jpg" alt="photo"/><a href="claudinep.html">Contactez-moi</a></td><td>Garde d'animaux<br/>Promenade d'animaux<br/>Démarches administratives</td><td>Massage</td><td>Beauté</td><td></td><td>Barby<br/>73230</td></tr>
+					<tr><td class="propos">Cours de hacker débutant<img src="hoanmy.jpg" alt="photo"/><a href="hoanmy.html">Contactez-moi</a></td><td>Prendre des photos<br/>Retoucher des photos</td><td>Hacker</td><td>Cours</td><td></td><td>Arnouville<br/>95400</td></tr>
+					<tr><td class="propos">Cours de Guitare<img src="lydia.jpg" alt="photo"/><a href="lydiam.html">Contactez-moi</a></td><td>Cours d'anglais<br/>Baby-sitting<br/>Promenade d'animaux</td><td>Cours de guitare</td><td>Cours</td><td></td><td>Saint ouen<br/>93400</td></tr>
+					<tr><td class="propos">Rendre visite a mon chat<img src="marine.jpg" alt="photo"/><a href="marinew.html">Contactez-moi</a></td><td>Jardinage<br/>Aide déménagement<br/>Garde d'enfant<br/>Garde d'animaux<br/>Nettoyage<br/>Repassage<br/>Langues</td><td>Garde d'animaux</td><td>Animaux</td><td></td><td>Lille<br/>59800</td></tr>
+					<tr><td class="propos">Vérifier si tout va bien<img src="jay.jpg" alt="photo"/><a href="jayj.html">Contactez-moi</a></td><td></td><td>Mécanique</td><td>Autres</td><td>3h</td><td>St pierre de boeuf<br/>42520</td></tr>
+					<tr><td class="propos">Comment devenir acteur<img src="nate.jpg" alt="photo"/><a href="nate.html">Contactez-moi</a></td><td>Formation de l'acteur</td><td></td><td>Formation</td><td>2h</td><td>USA</td></tr>
+					<tr><td class="propos">Hair Stylist<img src="blakelively.jpg" alt="photo"/><a href="blakelively.html">Contactez-moi</a></td><td></td><td>Stylist</td><td>Beauté</td><td>2h</td><td>USA</td>></tr>
+				</table>
+			</div>
+			<div id="droite">
+					<div>
+						<table id="calendrier">
+							<tr><td id="cal-titre" colspan="7">Janvier 2016</td></tr>
+							<tr><th class="dimanche">DIM</th><th>LUN</th><th>MAR</th><th>MER</th><th>JEU</th><th>VEN</th><th>SAM</th></tr>
+							<tr><td class="dimanche"></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td></tr>
+							<tr><td class="dimanche">4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+							<tr><td class="dimanche">11</td><td>12</td><td>13</td><td>14</td><td id="examen">15</td><td>16</td><td>17</td></tr>
+							<tr><td class="dimanche">18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr>
+							<tr><td class="dimanche">25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td></tr>
+						</table>
+					</div>
+					<span>
+						<span class="image">
+							<a href="#"><img src="house.png" alt="house"/></a>
+							<a href="#"><img src="animaux.png" alt="animaux"/></a>
+						</span>
+						<span class="image">
+							<a href="#"><img src="beaute.png" alt="beaute"/></a>
+							<a href="#"><img src="teach.png" alt="teach"/></a>
+						</span>
+						<span class="image">
+							<a href="#"><img src="personnel.png" alt="service-personnel"/></a>
+							<a href="#"><img src="travaux.png" alt="travaux"/></a>
+						</span>
+					</span>
+				</div>
+		</main>
+		
+
+
+		<footer>
+			<div>				
+			<p id="bas-de-page">
+				<span class="l-bdp"><a href="contact.html">Nous contacter</a></span>
+				<span class="l-bdp"><a href="accessibilité.html">Accessibilité</a></span>
+				<span class="l-bdp"><a href="feedback.html">FeedBack</a></span>
+				<span class="l-bdp"><a href="aide.html">Aide</a></span>
+			</p>
+			</div>
+		</footer>	
+	</body>
+</html>
