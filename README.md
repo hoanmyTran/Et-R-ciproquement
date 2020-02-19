@@ -1,2 +1,2 @@
-# Et-R-ciproquement
+# Et-Réciproquement
 IUT S2 - Web project
